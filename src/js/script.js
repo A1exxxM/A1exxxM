@@ -45,4 +45,33 @@ $(document).ready(function(){
           $('.overlay, #order').fadeIn();
         })
       });
+
+
+
+      function validateForms(form) {
+        $(form).validate({
+          rules: {
+            name: "required",
+            phone: "required",
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: "Введите ваше имя",
+            phone: "Введите ваш номер телефона",
+            email: {
+              required: "Введите ваш адрес email",
+              email: "Неверный формат email"
+            }
+          }
+        });
+      };
+      validateForms('#consultation-form');
+      validateForms('#consultation form');
+      validateForms('#order form');
+
+
+      $('input[name=phone]').mask("+7 (999) 999-99-99");
   });

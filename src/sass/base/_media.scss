@@ -54,6 +54,17 @@
             }
         }
     }
+    .footer {
+        height: 500px;
+        &__info {
+            height: 200px;
+            padding: 20px;
+        }   
+        &__tel {
+            margin: 15px;
+        }
+        
+    }
     .catalog {
         padding-bottom: 30px;
         &__content {
@@ -189,6 +200,25 @@
             }
             &__title {
                 margin-top: 10px;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 300px;
+            height: 150px;
+        }
+        &__tel {
+            font-size: 15px;
+        }
+        &__address {
+            font-size: 15px;
+        }
+        &__social-item {
+            width: 40px;
+            height: 40px;
+            i {
+                font-size: 20px;
             }
         }
     }

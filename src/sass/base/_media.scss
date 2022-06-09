@@ -222,4 +222,16 @@
             }
         }
     }
+    .modal {
+        width: 300px;
+        min-height: 350px;
+        padding: 30px 20px;
+        .feed-form {
+            width: 260px;
+        }
+        &__close {
+            right: 5px;
+            top: 5px;
+        }
+    }
 }

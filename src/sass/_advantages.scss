@@ -28,5 +28,8 @@
         a {
             color: #ff0000;
         }
+        &_animated {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
     }
 }

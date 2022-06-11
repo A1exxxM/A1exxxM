@@ -50,6 +50,9 @@
         a {
             text-transform: uppercase;
             color: #ffffff;
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
 }
